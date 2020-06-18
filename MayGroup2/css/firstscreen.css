@@ -1,0 +1,255 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+/* ​ */
+body {
+  margin:0;
+}
+​
+​
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+​
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+}
+​
+​
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+​
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+​
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+​
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+​
+/* Animation */
+​
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+@font-face {
+  font-family: "Monoton";
+  src: url("../font/monoton/Monoton-Regular.ttf");
+}
+body{
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.7);
+  /* background: linear-gradient(to top, rgba(204, 204, 204, 0.7) 0%, rgba(204, 204, 204, 0.7) 100%),url("../img/logomay2.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100%;
+  background-attachment: fixed;
+  color: #7f7f7f;
+  }
+
+  .imges{
+    text-align:center;
+  }
+
+
+  .copy-container h1{
+    font-family: 'Monoton', sans-serif;
+    font-size:60px;
+  }
+  ​
+  .copy-container h2{
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .share{
+  margin-top:100px;
+
+  }
+
+  .lets{
+    margin-top: 60px
+
+  }
+
+  form{
+  border-top: 2px solid #dee7ec;
+  }
+
+
+  .mail_form{
+    width:400px;
+    margin-top : 20px ;
+    margin-bottom:20px;
+    padding:5px;
+  }
+
+  .passed{
+    width:400px;
+    margin-top : 10px;
+    margin-bottom:30px;
+    padding:5px;
+  }
+  input[type="password"]{
+    font-style: normal;
+  }
+  input[type="submit"]{
+    background-color: rgba(219, 219, 219, 0.6);
+    border-style: none;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+
+
+/*    start code for the actual button:         */
+  .position {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+  #personal {
+    color:white;
+    text-decoration:none;
+    position:absolute;
+    bottom:15px;
+    right:2%;
+  }
+  .spot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .svg-wrapper {
+    margin-top: 0;
+    position: relative;
+    width: 150px;
+    /*make sure to use same height/width as in the html*/
+    height: 40px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px
+  }
+  /*
+    This is where we define the fill, color, thickness,
+    and stroke pattern of the SVG when there is no hover.
+    The dasharray and offset together define the line position
+    under the words. Here's also where the transition speed is set.
+  */
+
+  #shape {
+    stroke-width: 6px;
+    fill: transparent;
+    stroke: #009FFD;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease;
+  }
+  /*
+      Pushing the text up into the SVG. Without this the
+      text would be below the div's.
+  */
+
+  #text {
+    margin-top: -35px;
+    text-align: center;
+  }
+
+  #text a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.1em;
+  }
+  #text input{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.1em;
+
+  }
+  /*
+      Changing the shape on hover. I change the color of the stroke,
+  make it thinner, then set it to again wrap around the entire parent element.
+  */
+
+  .svg-wrapper:hover #shape {
+    stroke-dasharray: 50 0;
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke: #06D6A0;
+  }
+
+
+@media screen and (max-width: 768px) {
+  body{
+    height: 100%;
+  }
+}

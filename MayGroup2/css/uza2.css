@@ -1,0 +1,52 @@
+*{
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+body{
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.7);
+  /* background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%), url("../img/logomay2.jpg"); */
+  background-repeat:  no-repeat;  /* 背景の繰り返し設定 */
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  }
+
+  .imges{
+text-align:center;
+}
+
+
+.copy-container h1{
+
+font-family: 'Sawarabi Gothic', sans-serif;
+
+font-size:60px;
+}
+​
+.copy-container h2{
+  text-align: center;
+  font-size: 40px;
+}
+h2 {
+  margin-top: 30px;
+}
+.lets{
+  margin-top: 60px
+
+}
+
+form{
+border-top: 2px solid #dee7ec;
+
+}
+
+.btn_wrapper{
+  text-align: center;
+  padding-bottom: 30px;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: #7f7f7f;
+}

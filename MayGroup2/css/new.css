@@ -1,0 +1,317 @@
+*{
+  font-family: 'Sawarabi Gothic', sans-serif;
+  border-style: none;
+}
+html{
+}
+
+.mtext{
+  white-space: pre-wrap;
+}
+.toko{
+  margin:10px;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #7f7f7f;
+}
+h1{
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #4f4f4f;
+}
+
+body{
+  background-color: rgba(204, 204, 204, 0.7);
+  /* background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7)); */
+  /* background-color: lavender; */
+  background-repeat:  no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+textarea {
+  margin-top: 17px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  padding: 2px;
+  font-family: ;
+}
+span[class="b2"]:nth-child(n+1):nth-child(-n+5){
+  border-right: 1px solid #8f8f8f;
+  padding-right: 12px;
+  margin-right: 10px;
+}
+input[type="radio"]{
+  -webkit-appearance: radio;
+}
+input[type="text"]{
+  width: 300px;
+  border-radius: 3px;
+  padding: 2px;
+  margin-top: 5px;
+}
+input[type="password"]{
+  width: 180px;
+  border-radius: 3px;
+  padding: 2px;
+}
+input[type="button"], input[type="submit"]{
+  display: inline-block;
+  border-radius: 5%;
+  font-size: 8pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 4px 6px;
+  background: #999;
+  color: #fff;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 0px 2px 2px #666666;
+  margin-top: 5px;
+  width: 60px;
+  -webkit-appearance: none;
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+  box-shadow:none;
+  color: #fff;
+  background: #666;
+  -webkit-appearance: none;
+}
+.info{
+  padding: 10px;
+  border: 2px solid #7f7f7f;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.info input[type="text"]{
+  margin-top: 13px;
+}
+
+.delmess{
+  font-size: 12px;
+}
+.date{
+  width: 70px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 2px 6px 2px 6px;
+  background-color: rgba(230,230,230,0.8);
+  color: #5f5f5f;
+
+}
+#sbtn{
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.sort{
+  text-align: center;
+}
+.deldel{
+  width: 50px;
+}
+.time{
+  font-size: 9px;
+  color:#777;
+}
+.element{
+  padding:7px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+}
+.delc{
+  float: right;
+  margin-right: 10px;
+}
+/* Classify the genres and attaching color for them */
+.assignment{
+  float: right;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #FF9179;
+}
+.announce{
+  float: right;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #7AE3BC;
+}
+.test{
+  float: right;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #79C9FF;
+}
+.quiz{
+  float: right;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #7A79FF;
+}
+.break{
+  float: right;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #FF7991;
+}
+.other{
+  float: right;
+  border-radius: 10px;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: #c0c0c0;
+}
+/* end */
+
+/* button animation */
+.position {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+#personal {
+  color:white;
+  text-decoration:none;
+  position:absolute;
+  bottom:15px;
+  right:2%;
+}
+/*    start code for the actual button:         */
+
+
+/*
+    Spot is the span on the inside of the href that
+    fills the parent and makes the hover and link work
+    for the entire div
+*/
+
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*
+    This is the outer svg wrapper that the SVG itself will
+    fill. Multiple svg-wrapper classes can be put side by side.
+*/
+
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  /*make sure to use same height/width as in the html*/
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+}
+/*
+  This is where we define the fill, color, thickness,
+  and stroke pattern of the SVG when there is no hover.
+  The dasharray and offset together define the line position
+  under the words. Here's also where the transition speed is set.
+*/
+
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: #009FFD;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+/*
+    Pushing the text up into the SVG. Without this the
+    text would be below the div's.
+*/
+
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+
+#text a {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+#text input{
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+
+}
+/*
+    Changing the shape on hover. I change the color of the stroke,
+make it thinner, then set it to again wrap around the entire parent element.
+*/
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+@media screen and (max-width: 780px) {
+  main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 780px) {
+  main{
+    width: 75%;
+    align-items: center;
+  }
+  .posts{
+    width: 100%;
+  }
+  #sbtn{
+    margin-left: 0px;
+  }
+}

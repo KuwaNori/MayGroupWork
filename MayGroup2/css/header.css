@@ -1,0 +1,153 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  -webkit-appearance: none;
+  outline: none;
+}
+/* header */
+header{
+  top: 0px;
+  height: 45px;
+  background-color: #5f5f5f;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 35px;
+}
+.mainbar{
+  margin-left: 10px;
+  float: left;
+}
+
+#nav-drawer {
+position:relative;
+}
+
+.nav-unshown {
+display:none;
+}
+
+#nav-open {
+display:inline-block;
+width:30px;
+height:22px;
+vertical-align:middle;
+}
+
+header #nav-open span, header #nav-open span:before, #nav-open span:after{
+  position:absolute;
+  height:3px;
+  width:25px;
+  border-radius:3px;
+  background:#fff;
+  display:block;
+  content:'';
+  cursor:pointer;
+  margin-top: 10px;
+}
+
+header #nav-open span:before{
+  bottom:-8px;
+}
+
+header #nav-open span:after{
+bottom:-16px;
+}
+
+#nav-close{
+display:none;
+position:fixed;
+z-index:99;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+opacity:0;
+transition:.3s ease-in-out;
+}
+
+#nav-content{
+overflow:auto;
+position:fixed;
+top:0;
+left:0;
+z-index:9999;
+width:90%;
+max-width:330px;
+height:100%;
+coloer: #000;
+background: linear-gradient(180deg, #f0f0f0 0%, #f0f0f0 45%, #8f8f8f 45%, #8f8f8f 100%);
+transition:.3s ease-in-out;
+-webkit-transform:translateX(105%);
+transform:translateX(-105%);
+}
+#nav-message{
+  color: #fff;
+  margin-top: 40vh;
+  font-size: 18px;
+}
+#nav-input:checked ~ #nav-close{
+display:block;
+opacity:.5;
+}
+
+#nav-input:checked ~ #nav-content{
+-webkit-transform:translateX(0%);
+transform:translateX(0%);
+box-shadow:6px 0 25px rgba(0,0,0,.15);
+}
+
+header p{
+  font-size:22px;
+  margin: 10px;
+}
+ol.menu li{
+  position:relative;
+  line-height: 30px;
+  margin: 7px 0 7px 40px;
+  font-weight: inherit;
+  font-size:17px;
+  list-style: none;
+  transition-duration: 0.5s;
+}
+
+ol.menu li:before{
+  counter-increment: list;
+  content: "";
+  position: absolute;
+  list-style: none;
+  left: -35px;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  top: 35%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  animation:3s linear infinite rotation;
+}
+ol.menu li:hover{
+  font-size: 20px;
+}
+@keyframes rotation{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+li a{
+  color: black;
+  text-decoration: none;
+}
+li a:hover{
+  color: #7f7f7f;
+}
+.hname{
+  margin-top: 10px;
+  margin-right: 8px;
+  float: right;
+  color: #fff;
+}
